@@ -8,20 +8,30 @@
 $audio-canvas-video: false; // True | False
 
 // Fonts
-$font1: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font1: "Source Sans Pro", sans-serif;
 $font2: Georgia, serif;
 
 // = Colors
 // -----------------------------
 
-// Graphic chart
+$blue: #21678b;
+$orange: #f89728;
+$gray: #8b8d8f;
+$light-gray: #bfc0c2;
 $red: #df2e30;
-$blue: #1894c4;
-$facebook: #3b5998;
-$twitter: #43bfe1;
+$green: #a2cb53;
 
-$color1: $red;
-$color2: $blue;
+$color1: $blue;
+$color2: $orange;
+
+$C1: #99c2cc; // Cohort I
+$C2: #428ea1; // Cohort II
+$C3: $blue;   // Cohort III
+$C4: $orange; // Cohort IV
+$C5: #4b831f; // Cohort V
+$C123: $blue; // Cohorts I-III
+$MG: #46a3d2; // Medical Grantees
+$TG: #892829; // Training Grantees
 
 // Text
 $color-text-base: #212121;
@@ -63,3 +73,10 @@ $prefix-for-spec:      true !default; // required for keyframe mixin
 $width-large: 75em; // 1200/16
 $width-medium: 62em; // 992/16
 $width-small: 48em; // 768/16
+
+%page-margins {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}

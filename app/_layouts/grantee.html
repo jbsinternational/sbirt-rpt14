@@ -1,0 +1,18 @@
+---
+layout: cohort
+---
+    {% include custom-variables.html %}
+{% assign sidebar_include = '~-*-sidebar.html' | replace: '~', page.cohort | replace: '*', page.grantee %}
+
+{{ grantee_name }}
+{{ page.cohort }}
+<h2>{{ page.grantee }}</h2>
+<div class="page-tabs">
+{% if page.title == 'In Depth' %}
+ {{ page.title }}
+ {% endif %}
+</div>
+<div class="page-content">
+	<div class="page-content-left">{{ content }}</div>
+	<div class="page-content-right">{% include {{sidebar_include}} %}</div>
+</div>

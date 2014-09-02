@@ -3,4 +3,6 @@
    ======================= */
 
 .l-main {
+	@extend %page-margins;
+	overflow: hidden;
 }

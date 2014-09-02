@@ -10,7 +10,9 @@
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
     <!-- build:css({app,.tmp}) /css/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/_bower_components/tooltipster/css/tooltipster.css">
     <link rel="stylesheet" href="/css/style.css">
     <!-- endbuild -->
 
@@ -24,10 +26,22 @@
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    {{ content }}
-
+    <header>
+    {% include header.html %}
+    {% include nav-primary.html %}
+</header>
+{% if page.cohort != null %}{% include nav-cohort.html %}{% endif %}
+<div class="l-main">{{ content }}</div>
+    {% include footer.html %}
     {% include scripts.html %}
-
+    {% include map-script-C4.html %}
+<script type="text/javascript" language="javascript">
+   jQuery(document).ready(function() {
+    $('.home--cohorts > div').hover(function() {
+        var mapId = $(this).attr('data-mapid');
+        $('#'+mapId).fadeToggle(300);
+        });
+});
+   </script>
   </body>
 </html>

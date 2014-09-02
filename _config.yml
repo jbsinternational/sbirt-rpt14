@@ -11,7 +11,7 @@ author:
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
-          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'ruby']
 
 include: ['.htaccess']
 
@@ -20,8 +20,8 @@ future: true
 show_drafts: true
 
 permalink: none
-paginate: 0
-paginate_path: 'page:num'
+# paginate: 0
+# paginate_path: 'page:num'
 
 # Markdown library
 markdown: redcarpet

@@ -114,7 +114,7 @@ module.exports = function (grunt) {
     compass: {
       options: {
         // If you're using global Sass gems, require them here.
-        // require: ['singularity', 'jacket'],
+        require: 'SassyIcons',
         bundleExec: true,
         sassDir: '<%= yeoman.app %>/_scss',
         cssDir: '.tmp/css',
@@ -138,6 +138,13 @@ module.exports = function (grunt) {
         }
       }
     },
+    // sass: {
+    //   options: {
+    //     bundleExec: true, // Optional usage of Bundler, but recommended.
+    //     compass: true,
+    //     loadPath: ['ruby/2.0.0/gems/SassyIcons-0.0.10/stylesheets/_SassyIcons.scss']
+    //   }
+    // },
     autoprefixer: {
       options: {
         browsers: ['last 2 versions']
@@ -415,9 +422,9 @@ module.exports = function (grunt) {
     'autoprefixer:dist',
     'cssmin',
     'uglify',
-    'imagemin',
-    'svgmin',
-    'filerev',
+    // 'imagemin',
+    // 'svgmin',
+    // 'filerev',
     'usemin',
     'htmlmin'
     ]);
