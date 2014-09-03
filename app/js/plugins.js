@@ -21,4 +21,18 @@
     }
 }());
 
+    jQuery(document).ready(function() {
+        jQuery('ul.sf-menu').superfish({
+            delay: 100,
+            animation: {height:'show'},
+            speed: 'fast'
+        });
+    });
+   jQuery(document).ready(function() {
+    $('.home--cohorts > div').hover(function() {
+        var mapId = $(this).attr('data-mapid');
+        $('#'+mapId).fadeToggle(300);
+        });
+});
+
 // Place any jQuery/helper plugins in here.

@@ -6,11 +6,11 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
     <!-- build:css({app,.tmp}) /css/main.css -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="/_bower_components/tooltipster/css/tooltipster.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -35,13 +35,5 @@
     {% include footer.html %}
     {% include scripts.html %}
     {% include map-script-C4.html %}
-<script type="text/javascript" language="javascript">
-   jQuery(document).ready(function() {
-    $('.home--cohorts > div').hover(function() {
-        var mapId = $(this).attr('data-mapid');
-        $('#'+mapId).fadeToggle(300);
-        });
-});
-   </script>
   </body>
 </html>
