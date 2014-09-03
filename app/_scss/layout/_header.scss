@@ -3,13 +3,13 @@
    ======================= */
 @import "compass/css3";
 header {
-	background-image:url(../img/sbirt_header_bg_1x.png);
+	background-image:url(/img/sbirt_header_bg_1x.png);
 	// background-size: 2px 2px;
 }
 .header {
 
 	&--logo {
-		background-image: url(../img/sbirt_logo.png);
+		background-image: url(/img/sbirt_logo.png);
 		background-size: 141px 100px;
 		height: 112px;
 		width: 145px;
