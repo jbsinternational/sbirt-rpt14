@@ -6,10 +6,10 @@ body {
     font-family: $font1;
     font-weight: 400;
     font-size: 0.9em;
-    line-height: 1.5;
+    line-height: 1.4;
     background-image: url(/img/sbirt-rpt14_bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center 4em;
       
 }
@@ -17,7 +17,7 @@ b {
     font-weight:600;
 }
 p {
-    margin:0 0 .25em;
+    margin:0 0 .5em;
 }
 h1,h2,h3,h4 {
     font-weight: 600;
@@ -45,7 +45,7 @@ h5 {
 a {
     color: $color-link;
     text-decoration: none;
-    @include transition();
+    // @include transition();
 
     &:hover {
         color: $color-link-hover;
@@ -92,4 +92,35 @@ hr {
 .text-TG {
     color: $C4;
 }
-
+.label {
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.content {
+    background-color: #fff;
+    @include box-shadow(rgba(black,.05) 0 0 20px 0);
+    margin-bottom: 25px;
+    padding: 25px;
+    position: relative;
+    z-index: 5;
+}
+.website-url {
+    margin-bottom:1em;
+    &--label {
+        @extend h4;
+        display: block;
+        margin-bottom:0;
+        color: #000;
+    }
+}
+.captioned-image {
+    float: right;
+    padding: 15px 0 15px 25px;
+    font-size:0.85em;
+    p {
+        b {
+            text-transform: uppercase;
+        }
+    }
+}

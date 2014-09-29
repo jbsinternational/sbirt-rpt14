@@ -62,7 +62,7 @@ module.exports = function (grunt) {
         port: 9000,
         livereload: 35729,
         // change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
+        hostname: '0.0.0.0'
       },
       livereload: {
         options: {
@@ -114,7 +114,7 @@ module.exports = function (grunt) {
     compass: {
       options: {
         // If you're using global Sass gems, require them here.
-        require: 'SassyIcons',
+        require: ['SassyIcons', 'compass-css-arrow'],
         bundleExec: true,
         sassDir: '<%= yeoman.app %>/_scss',
         cssDir: '.tmp/css',
@@ -124,6 +124,7 @@ module.exports = function (grunt) {
         httpImagesPath: '/img',
         httpGeneratedImagesPath: '/img/generated',
         outputStyle: 'expanded',
+        sourcemap: true,
         raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
       },
       dist: {
@@ -290,6 +291,8 @@ module.exports = function (grunt) {
             '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
             //'_bower_components/jquery/jquery.js',
+            '_bower_components/superfish/dist/js/superfish.min.js',
+            '_bower_components/tooltipster/js/jquery.tooltipster.js',
             'favicon.ico',
             'apple-touch*.png'
           ],

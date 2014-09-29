@@ -1,4 +1,5 @@
 // Avoid `console` errors in browsers that lack a console.
+/*global $:false, jQuery:false */
 (function() {
     var method;
     var noop = function () {};
@@ -20,7 +21,7 @@
         }
     }
 }());
-
+// Superfish menu
     jQuery(document).ready(function() {
         jQuery('ul.sf-menu').superfish({
             delay: 100,
@@ -28,6 +29,8 @@
             speed: 'fast'
         });
     });
+
+// Landing page map    
    jQuery(document).ready(function() {
     $('.home--cohorts > div').hover(function() {
         var mapId = $(this).attr('data-mapid');
@@ -35,4 +38,22 @@
         });
 });
 
+// jQuery Accordion   
+  $(document).ready(function() {
+     var icons = {
+      header: 'ui-icon-plusthick',
+      activeHeader: 'ui-icon-minusthick'
+    };
+    $( '#accordion-container' ).accordion({
+      heightStyle: 'content',
+      icons: icons
+    });
+        $( '#toggle' ).button().click(function() {
+      if ( $( '#accordion-container' ).accordion( 'option', 'icons' ) ) {
+        $( '#accordion-container' ).accordion( 'option', 'icons', null );
+      } else {
+        $( '#accordion-container' ).accordion( 'option', 'icons', icons );
+      }
+    });
+  });
 // Place any jQuery/helper plugins in here.

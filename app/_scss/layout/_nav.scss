@@ -4,7 +4,7 @@
 
 .nav-primary {
 	@extend %page-margins;
-	height: 33px;
+	height: 32px;
 	border-top: 1px solid #ffffff;
 	margin-top: 1em;
 	clear:both;
@@ -23,7 +23,9 @@
 		text-transform: none;
 	}
 	a {
-		padding: 0.4em 1em 0.33em 1em
+		padding: 0.47em 1em 0.35em 1em;
+		font-size: 14px;
+		line-height: 19px;
 	}
 	a.sf-with-ul {
 		padding-right: 2.5em;
@@ -95,7 +97,7 @@
 	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
 }
 .sf-menu a {
-	padding: .22em 1em .35em;
+	padding: .3em 1em .35em;
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
@@ -109,7 +111,7 @@
 	// transition: background .2s;
 }
 .sf-menu ul li {
-	background: $light-gray;
+	background: $med-gray;
 	a {
 		color: black;
 		@include transition(0);
@@ -126,7 +128,7 @@
 	}
 }
 .sf-menu > li:hover > a {
-		background: $light-gray;
+		background: $med-gray;
 		z-index: 9999;
 }
 .sf-menu li.sfHover li:hover {

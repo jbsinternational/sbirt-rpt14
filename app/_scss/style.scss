@@ -13,10 +13,11 @@
  */
 
 /* Compass */
-@import "compass/css3/images";
+@import "compass";
 @import "SassyIcons";
 @import "toolkit";
 @import "singularitygs";
+@import "compass-css-arrow";
 
 /* Tools */
 @import "tools/functions";
@@ -38,6 +39,7 @@
 @import "layout/nav";
 @import "layout/footer";
 @import "layout/constrained";
+@import "layout/grantee";
 
 /* Modules */
 @import "modules/btn";
@@ -47,3 +49,7 @@
 @import "modules/home";
 @import "modules/cohort-landing";
 @import "modules/tooltipster";
+@import "modules/tabs";
+@import "modules/accordion";
+@import "modules/timeline";
+@import "modules/samples";

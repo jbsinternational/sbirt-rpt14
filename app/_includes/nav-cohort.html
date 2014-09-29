@@ -1,40 +1,43 @@
-
+{% include custom-variables.html %}
 <nav class="nav-cohort-{{ page.cohort }}">
 	<div class="nav-cohort-inner">
 <ul class="sf-menu" id="example">
 			<li>
 				<a href="index.html">Find a Grantee</a>
-{% if page.cohort == 'C4' %}{% include nav-grantees-C4.html %}{% endif %}
+{% if page.cohort == 'C4' %}{% include /C4/nav-grantees-C4.html %}{% endif %}
 {% if page.cohort == 'C5' %}{% include nav-grantees-C5.html %}{% endif %}
 {% if page.cohort == 'MG' %}{% include nav-grantees-MG.html %}{% endif %}
 {% if page.cohort == 'TG' %}{% include nav-grantees-TG.html %}{% endif %}
 			</li>
 			<li>
-				<a href="timeline.html">View Site Timeline</a>
+				<a href="{{ page.cohort }}-timeline.html">View Site Timeline</a>
 				
 			</li>
 			<li>
-				<a href="performance.html">Review Overall Performance</a>
+				<a href="{{ page.cohort }}-performance.html">Review Overall Performance</a>
 				<ul>
 					<li>
-						<a href="goal-progress.html">Aggregate Progress Towards Screen Goals</a>
+						<a href="{{ page.cohort }}-progress.html">Aggregate Progress Towards Screen Goals</a>
 					</li>
 					<li>
-						<a href="workflows.html">Sample Workflows</a>
+						<a href="{{ page.cohort }}-workflows.html">Sample Workflows</a>
 					</li>
 					<li>
-						<a href="pre-screen.html">Sample Pre-Screen</a>
+						<a href="{{ page.cohort }}-prescreen.html">Sample Pre-Screen</a>
 					</li>
 					<li>
-						<a href="websites.html">SBIRT Websites</a>
+						<a href="{{ page.cohort }}-websites.html">SBIRT Websites</a>
 					</li>
 				</ul>
 			</li>
 			<li>
-				<a href="review.html">Review Background</a>
-								<ul>
+				<a href="{{ page.cohort }}-review.html">Review Background</a>
+				<ul>
 					<li>
-						<a href="about-visits.html">About Implementation Visits</a>
+						<a href="{{ page.cohort }}-review.html">About SBIRT and {{ cohort_name }}</a>
+					</li>
+					<li>
+						<a href="{{ page.cohort }}-visits.html">About Implementation Visits</a>
 					</li>
 				</ul>
 			</li>

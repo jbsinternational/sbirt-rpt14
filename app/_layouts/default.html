@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js">
   <head>
@@ -22,7 +23,7 @@
     <!-- endbuild -->
 
   </head>
-  <body>
+  <body {% if page.cohort != null %}class="{{ page.cohort }}"{% endif %}>
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -34,6 +35,5 @@
 <div class="l-main">{{ content }}</div>
     {% include footer.html %}
     {% include scripts.html %}
-    {% include map-script-C4.html %}
   </body>
 </html>

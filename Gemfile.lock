@@ -24,6 +24,8 @@ GEM
     compass-core (1.0.0.rc.1)
       multi_json (~> 1.0)
       sass (>= 3.3.0, < 3.5)
+    compass-css-arrow (0.0.4)
+      compass (>= 0.11)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
     fast-stemmer (1.0.2)
@@ -77,6 +79,7 @@ PLATFORMS
 DEPENDENCIES
   SassyIcons (~> 0.0.10)
   compass (>= 0.12)
+  compass-css-arrow (~> 0.0.4)
   jekyll (~> 1.4.0)
   redcarpet
   singularitygs (~> 1.1.2)

@@ -17,7 +17,8 @@ $font2: Georgia, serif;
 $blue: #21678b;
 $orange: #f89728;
 $gray: #8b8d8f;
-$light-gray: #bfc0c2;
+$med-gray: #bfc0c2;
+$light-gray: #ececec;
 $red: #df2e30;
 $green: #a2cb53;
 
@@ -37,8 +38,8 @@ $TG: #892829; // Training Grantees
 $color-text-base: #212121;
 
 // link
-$color-link: $color1;
-$color-link-hover: darken($color1, 10%);
+$color-link: #0189cc;
+$color-link-hover: darken($color-link, 10%);
 
 // Mixin Placeholder
 $color-mixin-placeholder: #cdcdcd;
