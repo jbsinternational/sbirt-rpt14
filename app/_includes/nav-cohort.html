@@ -4,10 +4,10 @@
 <ul class="sf-menu" id="example">
 			<li>
 				<a href="index.html">Find a Grantee</a>
-{% if page.cohort == 'C4' %}{% include /C4/nav-grantees-C4.html %}{% endif %}
-{% if page.cohort == 'C5' %}{% include nav-grantees-C5.html %}{% endif %}
-{% if page.cohort == 'MG' %}{% include nav-grantees-MG.html %}{% endif %}
-{% if page.cohort == 'TG' %}{% include nav-grantees-TG.html %}{% endif %}
+{% if page.cohort == 'C4' %}{% include /C4/C4-nav-grantees.html %}{% endif %}
+{% if page.cohort == 'C5' %}{% include /C5/C5-nav-grantees.html %}{% endif %}
+{% if page.cohort == 'MG' %}{% include /MG/MG-nav-grantees.html %}{% endif %}
+{% if page.cohort == 'TG' %}{% include /TG/TG-nav-grantees.html %}{% endif %}
 			</li>
 			<li>
 				<a href="{{ page.cohort }}-timeline.html">View Site Timeline</a>
@@ -31,10 +31,10 @@
 				</ul>
 			</li>
 			<li>
-				<a href="{{ page.cohort }}-review.html">Review Background</a>
+				<a href="{{ page.cohort }}-background.html">Review Background</a>
 				<ul>
 					<li>
-						<a href="{{ page.cohort }}-review.html">About SBIRT and {{ cohort_name }}</a>
+						<a href="{{ page.cohort }}-background.html">About SBIRT and {{ cohort_name }}</a>
 					</li>
 					<li>
 						<a href="{{ page.cohort }}-visits.html">About Implementation Visits</a>
