@@ -17,5 +17,5 @@ compiling stack.c
 linking shared-object redcarpet.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 redcarpet.bundle ./.gem.20140808-2879-1jjjqt5
+/usr/bin/install -c -m 0755 redcarpet.bundle ./.gem.20141013-45316-x0ka30
 installing default redcarpet libraries

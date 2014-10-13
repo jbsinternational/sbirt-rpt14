@@ -2,8 +2,14 @@ sbirt-rpt14
 ===========
 Generated/scaffolded from https://github.com/robwierzbowski/generator-jekyllrb
 
-#Whaz up?
-run `bower install`
+#Requirements
+Bundler (http://bundler.io/)  
+Bower (http://bower.io/)  
+Grunt (http://gruntjs.com/installing-grunt) 
+
+#To set up enviroment
+run `bundle install`  
+run `bower install`  
 
 ## Grunt Workflow (from https://github.com/robwierzbowski/generator-jekyllrb)
 
