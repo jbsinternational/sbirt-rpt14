@@ -42,11 +42,11 @@
 }
 .nav-cohort-MG {
 	@extend .nav-cohort;
-	background-color: $C4;
+	background-color: $MG;
 }
-.nav-cohort-RG {
+.nav-cohort-TG {
 	@extend .nav-cohort;
-	background-color: $C4;
+	background-color: $TG;
 }
 .nav-cohort-inner {
 	@extend %page-margins;
