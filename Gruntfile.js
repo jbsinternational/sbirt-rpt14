@@ -115,6 +115,7 @@ module.exports = function (grunt) {
       options: {
         // If you're using global Sass gems, require them here.
         // require: ['SassyIcons', 'compass-css-arrow'],
+        require: ['singularitygs'],
         bundleExec: true,
         sassDir: '<%= yeoman.app %>/_scss',
         cssDir: '.tmp/css',
