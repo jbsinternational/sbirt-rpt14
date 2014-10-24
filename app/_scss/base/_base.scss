@@ -22,7 +22,11 @@ p {
 h1,h2,h3,h4 {
     font-weight: 600;
     margin: 0 0 0.5em;    
-    line-height: 1.3em;
+    line-height: 1.2em;
+    .sub-title {
+        font-size:0.75em;
+        text-transform: uppercase;
+    }
 }
 h1 {
     font-size:2.1em;
@@ -33,7 +37,6 @@ h2 {
 }
 h3 {
     font-size: 1.45em;
-
 }
 h4 {
     font-size:1.25em;
@@ -84,13 +87,13 @@ hr {
     color: $C4;
 }
 .text-C5 {
-    color: $C4;
+    color: $C5;
 }
 .text-MG {
-    color: $C4;
+    color: $MG;
 }
 .text-TG {
-    color: $C4;
+    color: $TG;
 }
 .label {
     font-size: 0.85em;
@@ -122,5 +125,8 @@ hr {
         b {
             text-transform: uppercase;
         }
+    }
+    img {
+        max-width: 364px;
     }
 }

@@ -65,6 +65,8 @@
 		.TG & { border-color: $TG; }
 		position: relative;
 		z-index:5;
+		height: 115px;
+		width: 115px;
 	}
 	&--last:after {
 		content: "";
@@ -108,6 +110,7 @@
 	h3 {
 		margin-bottom: 3px;
 		color: $blue;
+		max-width: 400px;
 	}
 	.tooltip {
 		cursor: pointer;
