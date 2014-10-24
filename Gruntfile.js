@@ -319,16 +319,16 @@ module.exports = function (grunt) {
         }]
       }
     },
-    buildcontrol: {
-      dist: {
-        options: {
-          remote: '../',
-          branch: 'gh-pages',
-          commit: true,
-          push: true
-        }
-      }
-    },
+    // buildcontrol: {
+    //   dist: {
+    //     options: {
+    //       remote: '../',
+    //       branch: 'gh-pages',
+    //       commit: true,
+    //       push: true
+    //     }
+    //   }
+    // },
     coffeelint: {
       options: {
         'max_line_length': {
@@ -430,8 +430,9 @@ module.exports = function (grunt) {
   grunt.registerTask('deploy', [
     'check',
     'test',
-    'build',
-    'buildcontrol'
+    'build'
+    //,
+    // 'buildcontrol'
     ]);
 
   grunt.registerTask('default', [
