@@ -25,24 +25,75 @@
 {% if page.cohort == 'C5' and page.grantee == 'SC' %} {% assign grantee_name = 'South Carolina' %} {% endif %}
 {% if page.cohort == 'C5' and page.grantee == 'VT' %} {% assign grantee_name = 'Vermont' %} {% endif %}
 
-<!-- Medical Grantees -->
-{% if page.cohort == 'MG' and page.grantee == 'IL' %} {% assign grantee_name = 'Chicago, IL' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'NY' %} {% assign grantee_name = 'Albany, NY' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'TX-HO' %} {% assign grantee_name = 'Houston, TX' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'MA' %} {% assign grantee_name = 'Boston, MA' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'DC' %} {% assign grantee_name = 'Washington, DC' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'IN' %} {% assign grantee_name = 'Indianapolis, IN' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'OH' %} {% assign grantee_name = 'Kettering, OH' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'GA' %} {% assign grantee_name = 'Macon, GA' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'CA-SA' %} {% assign grantee_name = 'Salinas, CA' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'OR' %} {% assign grantee_name = 'Portland, OR' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'CA-SF-GH' %} {% assign grantee_name = 'San Francisco, CA' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'CA-SF-UC' %} {% assign grantee_name = 'San Francisco, CA' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'MD' %} {% assign grantee_name = 'Baltimore, MD' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'MO' %} {% assign grantee_name = 'Columbia, MO' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'PA' %} {% assign grantee_name = 'Pittsburgh, PA' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'TX-SA' %} {% assign grantee_name = 'San Antonio, TX' %} {% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'CT' %} {% assign grantee_name = 'New Haven, CT' %} {% endif %}
+<!-- Medical Grantees <--></-->
+{% if page.cohort == 'MG' and page.grantee == 'IL' %} 
+	{% assign grantee_name = 'SBIRT at ACCESS' %} 
+	{% assign grantee_name_secondary = 'ACCESS Community Health Network Medical Center' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'NY' %} 
+	{% assign grantee_name = 'SBIRT-Medical Residency Program' %}  
+	{% assign grantee_name_secondary = 'Albany Medical Center' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'TX-HO' %} 
+	{% assign grantee_name = 'InSight Training for Primary Care Residents' %}  
+	{% assign grantee_name_secondary = 'Baylor College of Medicine' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'MA' %} 
+	{% assign grantee_name = 'Training Residents in Adolescent SBIRT' %}  
+	{% assign grantee_name_secondary = 'Children’s Hospital Boston' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'DC' %} 
+	{% assign grantee_name = 'Howard University SBIRT Medical Residency Program' %}  
+	{% assign grantee_name_secondary = 'Howard University' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'IN' %} 
+	{% assign grantee_name = 'SBIRT Implementation in the Indiana University Educational Innovations Project Medicine Residency Program' %}  
+	{% assign grantee_name_secondary = 'Indiana University Medical Center' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'OH' %} 
+	{% assign grantee_name = 'SBIRT-Medical Residency Program' %}  
+	{% assign grantee_name_secondary = 'Kettering Medical Center' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'GA' %} 
+	{% assign grantee_name = 'Southeastern Consortium for Substance Abuse Training' %}  
+	{% assign grantee_name_secondary = 'Mercer University' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'CA-SA' %} 
+	{% assign grantee_name = 'University of California, San Francisco, Natividad Family Medicine Residency SBIRT Training Program' %}  
+	{% assign grantee_name_secondary = 'Natividad Medical Center' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'OR' %} 
+	{% assign grantee_name = 'SBIRT Oregon Primary Care Initiative' %}  
+	{% assign grantee_name_secondary = 'Oregon Health and Science University' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'CA-SF-GH' %} 
+	{% assign grantee_name = 'SBIRT Medical Residency Program at San Francisco General Hospital' %}  
+	{% assign grantee_name_secondary = 'San Francisco General Hospital' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'CA-SF-UC' %} 
+	{% assign grantee_name = 'SBIRT Collaborative Education Project' %}  
+	{% assign grantee_name_secondary = 'University of California San Francisco' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'MD' %} 
+	{% assign grantee_name = 'University of Maryland' %}  
+	{% assign grantee_name_secondary = 'MD3 (Maryland M.D.s Making a Difference)' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'MO' %} 
+	{% assign grantee_name = 'Training Residents Across Disciplines in SBIRT Services' %}  
+	{% assign grantee_name_secondary = 'University of Missouri' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'PA' %} 
+	{% assign grantee_name = 'SBIRT Medical and Residency Training Program (SMaRT)' %}  
+	{% assign grantee_name_secondary = 'University of Pittsburgh School of Pharmacy' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'TX-SA' %} 
+	{% assign grantee_name = 'SBIRT-South Texas Area Residency Training (S-START)' %}  
+	{% assign grantee_name_secondary = 'University of Texas Health Science Center at San Antonio' %} 
+{% endif %}
+{% if page.cohort == 'MG' and page.grantee == 'CT' %} 
+	{% assign grantee_name = 'SBIRT Training in Yale Residency Programs' %}  
+	{% assign grantee_name_secondary = 'Yale University School of Medicine' %} 
+{% endif %}
 
 <!-- Training Grantees -->
 {% if page.cohort == 'TG' and page.grantee == 'PA' %} {% assign grantee_name = 'Pittsburgh, PA' %} {% endif %}
