@@ -14,7 +14,7 @@
 	font-size: 0.9em;
 	font-weight: 300;
 	letter-spacing: 0.05em;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 	ul.sf-menu {
 		> li {
 		text-transform: uppercase;
@@ -42,11 +42,11 @@
 }
 .nav-cohort-MG {
 	@extend .nav-cohort;
-	background-color: $C4;
+	background-color: $MG;
 }
 .nav-cohort-TG {
 	@extend .nav-cohort;
-	background-color: $C4;
+	background-color: $TG;
 }
 .nav-cohort-inner {
 	@extend %page-margins;
@@ -187,4 +187,16 @@
 	&-C123 {background-color: $C123;}
 	&-MG {background-color: $MG;}
 	&-TG {background-color: $TG;}
+}
+.nav-grantee-location {
+	font-size:0.8em;
+	text-transform: uppercase;
+}
+.nav-grantee-cols {
+	background-color: $med-gray;
+	width: 55em;
+	li {
+		float: left;
+		width:50%;
+	}
 }

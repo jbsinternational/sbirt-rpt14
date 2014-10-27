@@ -115,6 +115,7 @@ module.exports = function (grunt) {
       options: {
         // If you're using global Sass gems, require them here.
         // require: ['SassyIcons', 'compass-css-arrow'],
+        require: ['singularitygs'],
         bundleExec: true,
         sassDir: '<%= yeoman.app %>/_scss',
         cssDir: '.tmp/css',
@@ -318,16 +319,16 @@ module.exports = function (grunt) {
         }]
       }
     },
-    buildcontrol: {
-      dist: {
-        options: {
-          remote: '../',
-          branch: 'gh-pages',
-          commit: true,
-          push: true
-        }
-      }
-    },
+    // buildcontrol: {
+    //   dist: {
+    //     options: {
+    //       remote: '../',
+    //       branch: 'gh-pages',
+    //       commit: true,
+    //       push: true
+    //     }
+    //   }
+    // },
     coffeelint: {
       options: {
         'max_line_length': {
@@ -429,8 +430,9 @@ module.exports = function (grunt) {
   grunt.registerTask('deploy', [
     'check',
     'test',
-    'build',
-    'buildcontrol'
+    'build'
+    //,
+    // 'buildcontrol'
     ]);
 
   grunt.registerTask('default', [
