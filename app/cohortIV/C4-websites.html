@@ -4,8 +4,9 @@ parent: performance
 cohort: C4
 title: SBIRT Websites
 ---
-    <div class="cohort-title-block"><h2>{{ page.title }}</h2></div>
-<p class="website-url">
+{% include custom-variables.html %}
+    <div class="cohort-title-block"><h2>{{ cohort_name }} {{ page.title }}</h2></div>
+    <p class="website-url">
     <a href="http://sbirtwiki.wikispaces.com/American+Samoa" target="_blank">
         <span class="website-url--label">American Samoa SBIRT</span>
         http://sbirtwiki.wikispaces.com/American+Samoa</a>
