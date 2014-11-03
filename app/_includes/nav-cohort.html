@@ -9,11 +9,10 @@
 {% if page.cohort == 'MG' %}{% include /MG/MG-nav-grantees.html %}{% endif %}
 {% if page.cohort == 'TG' %}{% include /TG/TG-nav-grantees.html %}{% endif %}
 			</li>
-			{% if page.cohort != 'TG' %}
-				<li>
-					<a href="{{ page.cohort }}-timeline.html">View Site Timeline</a>
-				</li>
-			{% endif %}
+			<li>
+				<a href="{{ page.cohort }}-timeline.html">View Site Timeline</a>
+				
+			</li>
 			<li>
 				<a href="{{ page.cohort }}-performance.html">Review Overall Performance</a>
 				<ul>
