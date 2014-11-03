@@ -4,7 +4,8 @@ parent: performance
 cohort: MG
 title: SBIRT Websites
 ---
-    <div class="cohort-title-block"><h2>{{ page.title }}</h2></div>
+{% include custom-variables.html %}
+    <div class="cohort-title-block"><h2>{{ cohort_name }} {{ page.title }}</h2></div>
 
 <!-- <p class="website-url">
     <a href="#" target="_blank">
