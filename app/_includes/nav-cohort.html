@@ -15,14 +15,18 @@
 			<li>
 				<a href="{{ page.cohort }}-performance.html">Review Overall Performance</a>
 				<ul>
-					<li>
+					<li>{% if page.cohort != 'MG' %}
 						<a href="{{ page.cohort }}-progress.html">Aggregate Progress Towards Screen Goals</a>
+						{% endif %}
 					</li>
-					<li>
+
+					<li>{% if page.cohort != 'MG' %}
 						<a href="{{ page.cohort }}-workflows.html">Sample Workflows</a>
+						{% endif %}
 					</li>
-					<li>
+					<li>{% if page.cohort != 'MG' %}
 						<a href="{{ page.cohort }}-prescreen.html">Sample Pre-Screen</a>
+						{% endif %}
 					</li>
 					{% if page.cohort != 'TG' %}
 						<li>
