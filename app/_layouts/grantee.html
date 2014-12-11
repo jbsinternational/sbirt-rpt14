@@ -7,6 +7,9 @@ layout: default
 <ul class="tabs clearfix">
 	<li><a href="{{ page.cohort }}-{{ page.grantee }}-info.html"{% if page.title == 'Program Information' %} class="ui-state-active"{% endif %}>Program Information</a></li>
 	<li><a href="{{ page.cohort }}-{{ page.grantee }}-visit.html"{% if page.title == 'Site Visit Report' %} class="ui-state-active"{% endif %}>Site Visit Report</a></li>
+	{% if page.cohort == 'C4' or page.cohort == 'C5' or page.cohort == 'TG' %}
+	{% if page.grantee != 'NJ' and page.grantee != 'IN' and page.grantee != 'NM' %}
+		<li><a href="{{ page.cohort }}-{{ page.grantee }}-progress.html"{% if page.title == 'Progress Indicators' %} class="ui-state-active"{% endif %}>Progress Indicators</a></li>{% endif %}{% endif %}
 </ul>
 <div class="grantee-content clearfix">
 	<div class="grantee-content-left">{{ content }}</div>
@@ -14,7 +17,7 @@ layout: default
 <img src="/img/{{ page.cohort }}-{{ page.grantee }}-site.jpg" class="grantee-photo" alt="{{ grantee_name }}">
 {% include {{data_include}} %}
 <div class="grantee-pdf">
-    <a href="pdf/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+    <a href="/pdf/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         <img src="/img/{{ page.cohort }}-{{ page.grantee }}-pdf.jpg" alt="PDF of {{ grantee_name }}'s Site Visit Report">Site Report (PDF {{ page.pdf-size }})</a>
 </div>
 		</div>

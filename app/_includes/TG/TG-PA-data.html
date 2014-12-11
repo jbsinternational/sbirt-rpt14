@@ -1,35 +1,18 @@
-<h5 class="barchart--title">Training Progress</h5>
-<div class="barchart">
-    <ul class="barchart--y-axis">
-        <li>200%</li>
-        <li>180%</li>
-        <li>160%</li>
-        <li>140%</li>
-        <li>120%</li>
-        <li class="barchart--y-axis--100">100%</li>
-        <li>80%</li>
-        <li>60%</li>
-        <li>40%</li>
-        <li>20%</li>
-        <li>0%</li>
-    </ul>
-    <div class="barchart-inner">
-        <ul class="barchart--grid">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <div class="barchart--actual-bar"></div>
-        <div class="barchart--goal-line"></div>
-        <div class="barchart--actual-label">Trained: 76 <span class="barchart--actual-label--percentage">(100%)</span></div>
-        <div class="barchart--goal-label">Goal: 76 <span class="barchart--goal-label--unit">trainees</span></div>
-    </div>
-</div>
-<div class="barchart--caption">Percentage of Trainees trained during the reporting period</div>
+{% comment %} Variables
+barchart_title: What's the chart called 
+barchart_actual_label: What are we measuring? 
+barchart_unit: What unit of are measuring by? 
+barchart_caption: caption goes under barchart 
+barchart_period: period of time the barchart is illustrating (OPTIONAL) 
+barchart_goal: target measurement (equals 100% on the chart) 
+	IMPORTANT: If Goal is not reported or is 0 than "assign barchart_goal = null". Not doing so cause the site not to render.
+barchart_actual: the actual measurement 
+{% endcomment %}
+{% include /TG/TG-barcharts.html %}
+
+{% assign barchart_period = 'March 1, 2014–May 31, 2014' %} 
+{% assign barchart_goal = '72' %}
+{% assign barchart_actual = '72' %}
+
+{% comment %} now we run these variables through our barchart template {% endcomment %}
+{% if barchart_goal != null %}{% include barchart.html %}{% endif %}

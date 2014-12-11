@@ -1,0 +1,19 @@
+{% comment %} Variables
+barchart_title: What's the chart called 
+barchart_actual_label: What are we measuring? 
+barchart_unit: What unit of are measuring by? 
+barchart_caption: caption goes under barchart 
+barchart_period: period of time the barchart is illustrating (OPTIONAL) 
+barchart_goal: target measurement (equals 100% on the chart) 
+	IMPORTANT: If Goal is not reported or is 0 than "assign barchart_goal = null". Not doing so cause the site not to render.
+barchart_actual: the actual measurement 
+{% endcomment %}
+
+{% include /C5/C5-barcharts.html %}
+
+{% assign barchart_period = 'March 1, 2014-July 31, 2014' %} 
+{% assign barchart_goal = '26342' %}
+{% assign barchart_actual = '25643' %}
+
+{% comment %} now we run these variables through our barchart template {% endcomment %}
+{% if barchart_goal != null %}{% include barchart.html %}{% endif %}

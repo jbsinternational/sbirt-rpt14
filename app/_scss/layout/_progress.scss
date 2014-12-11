@@ -1,0 +1,43 @@
+.progress {
+	&--aggregate {
+		// width: 332px;
+		.progress--barcharts-barchart-label {
+			margin-top:15px;
+		}
+		margin-bottom: 2em;
+	}
+	&--barcharts-aggregate {
+		width: 40%;
+		float: right;
+		box-sizing: border-box;
+	}
+	&--cohort-datatable {
+		width: 60%;
+		padding-right: 25px;
+		margin-top: 15px;
+		float: left;
+		box-sizing: border-box;	
+	}
+	&--barcharts {
+		list-style: none;
+		clear: both;
+		overflow: hidden;
+		padding: 0;
+		margin:0;
+		&-barchart {
+			float: left;
+			width: 50%;
+			box-sizing: border-box;
+			padding: 25px 61px;
+			list-style: none;
+			&-label {
+				text-align: center;
+				margin-top: 0;
+			}
+			& .barchart--caption {
+		        // v Offset the caption so its centered with the plot area?
+		        margin-left: 86px;
+	    	 }
+		}
+	}
+}

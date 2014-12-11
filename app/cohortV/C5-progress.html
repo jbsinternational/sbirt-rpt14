@@ -2,8 +2,18 @@
 layout: content
 parent: performance 
 cohort: C5
-title: Progress Towards Screen Goals
+title: Individual Grantee Progress Indicators
 ---
+{% include custom-variables.html %}
+{% assign cohort_barchart_include = '/~/~-barcharts.html' | replace: '~', page.cohort %}
+{% include {{cohort_barchart_include}} %}
+
 <div class="cohort-title-block"><h2>{{ page.title }}</h2></div>
-<img style="float:right;" src="http://media.giphy.com/media/NUZvvmgyVPfW0/giphy.gif" alt="break dancing loader">
-<h3>This page is still under construction.</h3>
+<p>Charts show overall per grantee training progress during reporting period. Click on a chart to see a breakdown of the data.
+   <ul class="progress--barcharts">
+	<!--<li class="progress--barcharts-barchart"><a href="C5-NM-progress.html"><h5 class="progress--barcharts-barchart-label">New Mexico</h5>{% include /C5/C5-NM-data.html %}</a></li>-->
+	<li class="progress--barcharts-barchart"><a href="C5-NY-progress.html"><h5 class="progress--barcharts-barchart-label">New York</h5>{% include /C5/C5-NY-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C5-OH-progress.html"><h5 class="progress--barcharts-barchart-label">Ohio</h5>{% include /C5/C5-OH-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C5-SC-progress.html"><h5 class="progress--barcharts-barchart-label">South Carolina</h5>{% include /C5/C5-SC-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C5-VT-progress.html"><h5 class="progress--barcharts-barchart-label">Vermont</h5>{% include /C5/C5-VT-data.html %}</a></li>
+</ul>

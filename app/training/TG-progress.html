@@ -2,8 +2,27 @@
 layout: content
 parent: performance 
 cohort: TG
-title: Progress Towards Screen Goals
+title: Individual Grantee Progress Indicators
 ---
+{% include custom-variables.html %}
+{% assign cohort_barchart_include = '/~/~-barcharts.html' | replace: '~', page.cohort %}
+{% include {{cohort_barchart_include}} %}
+
 <div class="cohort-title-block"><h2>{{ page.title }}</h2></div>
-<img style="float:right;" src="http://media.giphy.com/media/NUZvvmgyVPfW0/giphy.gif" alt="break dancing loader">
-<h3>This page is still under construction.</h3>
+<p>Charts show overall per grantee training progress during reporting period. Click on a chart to see a breakdown of the data.
+   <ul class="progress--barcharts">
+	<li class="progress--barcharts-barchart"><a href="TG-PA-progress.html"><h5 class="progress--barcharts-barchart-label">Allegheny-Singer Research Institute</h5>{% include /TG/TG-PA-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-MA-progress.html"><h5 class="progress--barcharts-barchart-label">Boston Children’s Hospital</h5>{% include /TG/TG-MA-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-DC-progress.html"><h5 class="progress--barcharts-barchart-label">Catholic University of America</h5>{% include /TG/TG-DC-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-NY-progress.html"><h5 class="progress--barcharts-barchart-label">City University of New York/Lehman College</h5>{% include /TG/TG-NY-data.html %}</a></li>
+<!-- 	<li class="progress--barcharts-barchart"><a href="TG-IN-progress.html"><h5 class="progress--barcharts-barchart-label">Indiana University</h5>{% include /TG/TG-IN-data.html %}</a></li> -->
+	<li class="progress--barcharts-barchart"><a href="TG-GA-progress.html"><h5 class="progress--barcharts-barchart-label">Mercer University</h5>{% include /TG/TG-GA-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-AK-progress.html"><h5 class="progress--barcharts-barchart-label">University of Alaska Anchorage</h5>{% include /TG/TG-AK-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-CA-progress.html"><h5 class="progress--barcharts-barchart-label">University of California, Los Angeles</h5>{% include /TG/TG-CA-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-CO-progress.html"><h5 class="progress--barcharts-barchart-label">University of Colorado Denver</h5>{% include /TG/TG-CO-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-FL-progress.html"><h5 class="progress--barcharts-barchart-label">University of Miami</h5>{% include /TG/TG-FL-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-MO-progress.html"><h5 class="progress--barcharts-barchart-label">University of Missouri-Kansas City</h5>{% include /TG/TG-MO-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-SC-progress.html"><h5 class="progress--barcharts-barchart-label">University of South Carolina</h5>{% include /TG/TG-SC-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-VT-progress.html"><h5 class="progress--barcharts-barchart-label">University of Vermont</h5>{% include /TG/TG-VT-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="TG-WI-progress.html"><h5 class="progress--barcharts-barchart-label">University of Wisconsin-Milwaukee</h5>{% include /TG/TG-WI-data.html %}</a></li>
+</ul>

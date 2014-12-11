@@ -1,0 +1,54 @@
+--- 
+layout: content
+parent: performance 
+cohort: C4
+title: Aggregate Progress Indicators
+---
+{% include custom-variables.html %}
+{% assign cohort_barchart_include = '/~/~-barcharts.html' | replace: '~', page.cohort %}
+{% include {{cohort_barchart_include}} %}
+
+<div class="cohort-title-block"><h2>{{ page.title }} for {{ cohort_name }}</h2></div>
+<div class="progress--aggregate clearfix">
+   	<div class="progress--cohort-datatable">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Progress Indicator</th>
+      <th class="table--cell-center">Totals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>How many clients did you plan to serve?</td> 
+      <td class="table--cell-center">96,696</td>
+          </tr>
+    <tr>
+      <td>How many new clients were actually served?</td>  
+      <td class="table--cell-center">107,437</td>
+          </tr>
+    <tr>
+      <td>How many intakes/admissions were completed? </td>
+      <td class="table--cell-center">92,669</td>
+          </tr>
+    <tr>
+      <td>How many clients completed the intakes/admissions Government Performance and Results Act (GPRA) assessment but did not receive treatment from project staff?</td>
+      <td class="table--cell-center">15,259</td>
+          </tr>
+    <tr>
+      <td>How many clients were discharged from the program before completion? </td>  
+      <td class="table--cell-center">814</td>
+          </tr>
+    <tr>
+      <td>How many clients graduated from the program?</td>
+      <td class="table--cell-center">53,942</td>
+          </tr>
+    <tr>
+      <td>How many new clients do you plan to serve in the next reporting period?</td>
+      <td class="table--cell-center">94,828</td>
+    </tr>
+  </tbody>
+</table>
+   	</div>
+   	   	<div class="progress--barcharts-aggregate"><h5 class="progress--barcharts-barchart-label">Aggregate {{ barchart_title }}</h5>{% include /C4/C4-aggregate-data.html %}</div>
+</div>

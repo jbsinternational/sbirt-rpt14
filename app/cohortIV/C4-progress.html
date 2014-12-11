@@ -2,8 +2,25 @@
 layout: content
 parent: performance 
 cohort: C4
-title: Progress Towards Screen Goals
+title: Individual Grantee Progress Indicators
 ---
+{% include custom-variables.html %}
+{% assign cohort_barchart_include = '/~/~-barcharts.html' | replace: '~', page.cohort %}
+{% include {{cohort_barchart_include}} %}
+
 <div class="cohort-title-block"><h2>{{ page.title }}</h2></div>
-<img style="float:right;" src="http://media.giphy.com/media/NUZvvmgyVPfW0/giphy.gif" alt="break dancing loader">
-<h3>This page is still under construction.</h3>
+<p>Charts show overall per grantee training progress during reporting period. Click on a chart to see a breakdown of the data.
+   <ul class="progress--barcharts">
+	<li class="progress--barcharts-barchart"><a href="C4-AS-progress.html"><h5 class="progress--barcharts-barchart-label">American Samoa</h5>{% include /C4/C4-AS-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C4-AZ-progress.html"><h5 class="progress--barcharts-barchart-label">Arizona</h5>{% include /C4/C4-AZ-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C4-CO-progress.html"><h5 class="progress--barcharts-barchart-label">Colorado</h5>{% include /C4/C4-CO-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C4-CT-progress.html"><h5 class="progress--barcharts-barchart-label">Connecticut</h5>{% include /C4/C4-CT-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C4-IL-progress.html"><h5 class="progress--barcharts-barchart-label">Illinois</h5>{% include /C4/C4-IL-data.html %}</a></li>
+	<!-- <li class="progress--barcharts-barchart"><a href="C4-IN-progress.html"><h5 class="progress--barcharts-barchart-label">Indiana</h5>{% include /C4/C4-IN-data.html %}</a></li> -->
+	<li class="progress--barcharts-barchart"><a href="C4-IA-progress.html"><h5 class="progress--barcharts-barchart-label">Iowa</h5>{% include /C4/C4-IA-data.html %}</a></li>
+	<!-- <li class="progress--barcharts-barchart"><a href="C4-NJ-progress.html"><h5 class="progress--barcharts-barchart-label">New Jersey</h5>{% include /C4/C4-NJ-data.html %}</a></li>-->
+	<li class="progress--barcharts-barchart"><a href="C4-NY-progress.html"><h5 class="progress--barcharts-barchart-label">New York</h5>{% include /C4/C4-NY-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C4-NC-progress.html"><h5 class="progress--barcharts-barchart-label">North Carolina</h5>{% include /C4/C4-NC-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C4-TN-progress.html"><h5 class="progress--barcharts-barchart-label">Tennessee</h5>{% include /C4/C4-TN-data.html %}</a></li>
+	<li class="progress--barcharts-barchart"><a href="C4-WA-progress.html"><h5 class="progress--barcharts-barchart-label">Washington</h5>{% include /C4/C4-WA-data.html %}</a></li>
+</ul>

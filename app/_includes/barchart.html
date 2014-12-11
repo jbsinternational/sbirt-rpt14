@@ -1,0 +1,47 @@
+{% assign barchart_percent = (barchart_actual | times: 100 | divided_by: barchart_goal) %}
+{% if page.title != 'Aggregate Progress Indicators' and page.title != 'Individual Grantee Progress Indicators' %}<h5 class="barchart--title">{{ barchart_title }}</h5>{% endif %}
+
+    <div class="barchart">
+        <ul class="barchart--y-axis">
+            <li>200%</li>
+            <li>180%</li>
+            <li>160%</li>
+            <li>140%</li>
+            <li>120%</li>
+            <li class="barchart--y-axis--100">100%</li>
+            <li>80%</li>
+            <li>60%</li>
+            <li>40%</li>
+            <li>20%</li>
+            <li>0%</li>
+        </ul>
+        <div class="barchart-inner">
+        {% if barchart_percent > 210 %} <div class="barchart--overflow"><div class="barchart--overflow--inner"></div></div>{% endif %}
+            <ul class="barchart--grid">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            {% if barchart_percent > 210 %}
+                <div class="barchart--actual-bar" style="height: 100%"></div>
+                <div class="barchart--goal-line"></div>
+                <div class="barchart--actual-label barchart--actual-label--up" style="bottom: 104%">{{ barchart_actual_label }}: <span class="number">{{ barchart_actual }}</span> <span class="barchart--actual-label--percentage">({{ barchart_percent }}%)</span></div>
+                <div class="barchart--goal-label barchart--goal-label--down">Goal: <span class="number">{{ barchart_goal }}</span> <span class="barchart--goal-label--unit">{{ barchart_goal_unit }}</span></div>
+            {% else %}
+                <div class="barchart--actual-bar" style="height: {{ barchart_percent | divided_by: 2}}%"></div>
+                <div class="barchart--goal-line"></div>
+                <div class="barchart--actual-label {% if barchart_percent > 99 and barchart_percent < 180 %}barchart--actual-label--down{% elsif barchart_percent < 40 %}barchart--actual-label--down{% endif %}{% if barchart_percent < 100 and barchart_percent > 40 %}barchart--actual-label--up{% endif %}{% if barchart_percent < 210 and barchart_percent > 180 %}barchart--actual-label--up{% endif %}" style="bottom: {{ barchart_percent | divided_by: 2}}%">{{ barchart_actual_label }}: <span class="number">{{ barchart_actual }}</span> <span class="barchart--actual-label--percentage">({{ barchart_percent }}%)</span></div>   
+                <div class="barchart--goal-label {% if barchart_percent < 100 %}barchart--goal-label--up{% elsif barchart_percentage > 100 or barchart_percentage == 100 %}barchart--goal-label--up{% endif %}">Goal: <span class="number">{{ barchart_goal }}</span> <span class="barchart--goal-label--unit">{{ barchart_goal_unit }}</span></div>
+            {% endif %}
+        </div>
+    </div>
+
+
+<div class="barchart--caption">{{ barchart_caption }}{% if barchart_period != null %} during<br>{{ barchart_period }}{% endif %}</div>
