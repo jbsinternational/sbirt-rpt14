@@ -1,9 +1,31 @@
 .samples {
 	h3 {
-		margin-top:15px;
+	margin-top: 15px;
+	float: left;
+	width: 50%;
+	}
+	h5 {
+		margin:0 50px;
+		line-height: 1.3em;
 	}
 	img {
 		margin:10px auto 25px;
 		display: block;
+	}
+	&--thumb {
+		width: 600px * .33;
+		height:776px * .33;
+		border: 1px solid $gray;
+	}
+	&--cell {
+		width: 50%;
+		float: left;
+		text-align: center;
+		&:nth-of-type(odd) {
+			clear: left;
+		}
+	}
+	&--size {
+		font-weight: 500;
 	}
 }
